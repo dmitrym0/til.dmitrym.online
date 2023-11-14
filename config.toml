@@ -52,6 +52,11 @@ disqusShortname = "dmitry-m-viridis-quo"
 
 # Menu links
 [[menu.main]]
+    name = "TIL"
+    weight = -10
+    url  = "/posts/"
+
+[[menu.main]]
     name = "Blog"
     weight = 1
     url  = "https://dmitrym.online/posts/"
