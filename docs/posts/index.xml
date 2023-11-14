@@ -14,7 +14,7 @@
       
       <guid>https://til.dmitrym.online/posts/stern/</guid>
       <description>stern is a log tailer for k8s. Similar to tail -f but for multipe Kubernetes pods:
-1 stern --only-log-lines --max-log-requests 1000 --namespace k8s-namesapce &amp;#39;podw-wildcard*&amp;#39; </description>
+1 2 3 4 stern --only-log-lines \ --max-log-requests 1000 \ --namespace k8s-namesapce \ &amp;#39;pod-wildcard*&amp;#39; </description>
     </item>
     
   </channel>
