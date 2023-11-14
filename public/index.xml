@@ -6,7 +6,7 @@
     <description>Recent content on Dmitry M - Today I learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Dec 2001 00:00:00 +0000</lastBuildDate><atom:link href="https://til.dmitrym.online/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 00:00:00 -0800</lastBuildDate><atom:link href="https://til.dmitrym.online/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About TIL</title>
       <link>https://til.dmitrym.online/pages/about/</link>
@@ -15,6 +15,16 @@
       <guid>https://til.dmitrym.online/pages/about/</guid>
       <description>This is my TIL (&amp;ldquo;Today I Learned&amp;rdquo;) compendium. In the spirit of sharing and learning in public. I originally learned this from Sean Willson&amp;rsquo;s What to blog about:
 A TIL—Today I Learned—is the most liberating form of content I know of. Did you just learn how to do something? Write about that. Call it a TIL—that way you’re not promising anyone a revelation or an in-depth tutorial. You’re saying “I just figured this out: here are my notes, you may find them useful too”.</description>
+    </item>
+    
+    <item>
+      <title>Stern</title>
+      <link>https://til.dmitrym.online/posts/stern/</link>
+      <pubDate>Mon, 13 Nov 2023 00:00:00 -0800</pubDate>
+      
+      <guid>https://til.dmitrym.online/posts/stern/</guid>
+      <description>stern is a log tailer for k8s. Similar to tail -f but for multipe Kubernetes pods:
+1 stern --only-log-lines --max-log-requests 1000 --namespace k8s-namesapce &amp;#39;podw-wildcard*&amp;#39; </description>
     </item>
     
   </channel>
