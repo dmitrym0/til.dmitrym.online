@@ -6,7 +6,20 @@
     <description>Recent content in Posts on Dmitry M - Today I learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Nov 2023 00:00:00 -0800</lastBuildDate><atom:link href="https://til.dmitrym.online/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Jan 2024 00:00:00 -0800</lastBuildDate><atom:link href="https://til.dmitrym.online/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>local-ssl-proxy and mkcert</title>
+      <link>https://til.dmitrym.online/posts/local-ssl-proxy-and-mkcert/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 -0800</pubDate>
+      
+      <guid>https://til.dmitrym.online/posts/local-ssl-proxy-and-mkcert/</guid>
+      <description>Ocassionally, it&amp;rsquo;s helpful to run a local service with SSL. My particular scenario has an application that insists on redirecting everything to https even when running in development mode.
+Start with by installing local-ssl-proxy:
+1 npm install -g local-ssl-proxy run it like so:
+1 local-ssl-proxy --source 9001 --target 9000 if you want to avoid unsightly untrusted certificate errors install mkcert:
+1 2 3 brew install mkcert mkcert -install mkcert mydomainname.com Assuming that mydomainname.</description>
+    </item>
+    
     <item>
       <title>Stern</title>
       <link>https://til.dmitrym.online/posts/stern/</link>
@@ -14,7 +27,7 @@
       
       <guid>https://til.dmitrym.online/posts/stern/</guid>
       <description>stern is a log tailer for k8s. Similar to tail -f but for multipe Kubernetes pods:
-1 stern --only-log-lines --max-log-requests 1000 --namespace k8s-namesapce &amp;#39;podw-wildcard*&amp;#39; </description>
+1 2 3 4 stern --only-log-lines \ --max-log-requests 1000 \ --namespace k8s-namesapce \ &amp;#39;pod-wildcard*&amp;#39; </description>
     </item>
     
   </channel>
