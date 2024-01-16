@@ -6,7 +6,19 @@
     <description>Recent content in seedling on Dmitry M - Today I learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jan 2024 00:00:00 -0800</lastBuildDate><atom:link href="https://til.dmitrym.online/tags/seedling/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Jan 2024 00:00:00 -0800</lastBuildDate><atom:link href="https://til.dmitrym.online/tags/seedling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>readme-toc</title>
+      <link>https://til.dmitrym.online/posts/readme-toc-generate-table-of-contents/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 -0800</pubDate>
+      
+      <guid>https://til.dmitrym.online/posts/readme-toc-generate-table-of-contents/</guid>
+      <description>readme-toc is a utility that creates a table of contents in markdown documents.
+You create a placeholder for where you want the TOC to go and the utility creates the rest:
+Starting with this README.md:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 # README.md &amp;lt;!-- toc --&amp;gt; &amp;lt;!-- toc stop --&amp;gt; # Installation instructions ```shell npx readme-toc ``` # Another Heading # Final heading then running:</description>
+    </item>
+    
     <item>
       <title>local-ssl-proxy and mkcert</title>
       <link>https://til.dmitrym.online/posts/local-ssl-proxy-and-mkcert/</link>
