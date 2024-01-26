@@ -24,7 +24,7 @@ A TIL—Today I Learned—is the most liberating form of content I know of. Did 
       
       <guid>https://til.dmitrym.online/posts/remove-stale-github-workflows/</guid>
       <description>There&amp;rsquo;s a long standing Github ticket for removing stale github workflows. Turns out there&amp;rsquo;s no way to remove a workflow.
-The work around here is to remove all =workflow runs= first.
+The work around here is to remove all workflow runs first.
 Install github command line tool: brew install gh In the repo&amp;rsquo;s working directory do the following: 1 gh run list --workflow=stale-workflow.yml --json databaseId | jq &amp;#39;.[].databaseId&amp;#39; | xargs -I{} gh run delete {} Replace stale-workflow.yml with the appropriate workflow file name.</description>
     </item>
     
