@@ -6,9 +6,20 @@
     <description>Recent content in Posts on Dmitry M - Today I learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 Jan 2024 00:00:00 -0800</lastBuildDate><atom:link href="https://til.dmitrym.online/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://til.dmitrym.online/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>readme-toc</title>
+      <title>How to remove stale github workflows</title>
+      <link>https://til.dmitrym.online/posts/remove-stale-github-workflows/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://til.dmitrym.online/posts/remove-stale-github-workflows/</guid>
+      <description>There&amp;rsquo;s a long standing Github ticket for removing stale github workflows. Turns out there&amp;rsquo;s no way to remove a workflow.
+The work around here is to remove all =workflow runs= first.
+Install github command line tool: brew install gh In the repo&amp;rsquo;s working directory do the following: 1 gh run list --workflow=stale-workflow.yml --json databaseId | jq &amp;#39;.[].databaseId&amp;#39; | xargs -I{} gh run delete {} Replace stale-workflow.yml with the appropriate workflow file name.</description>
+    </item>
+    
+    <item>
+      <title>readme-toc - generate a table of contents in markdown documents</title>
       <link>https://til.dmitrym.online/posts/readme-toc-generate-table-of-contents/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 -0800</pubDate>
       
