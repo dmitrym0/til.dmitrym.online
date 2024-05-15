@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Dmitry M">
+    <meta name="description" content="Dmitry&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Emacs syntax checking with Flycheck"/>
+<meta name="twitter:description" content="Flycheck is a syntax checker for Emacs. Confusingly there&rsquo;s another syntax checker called Flymake that is built into Emacs. Flycheck seems to have vastly more functionality though.
+Essentially what Flycheck does is shows you &ldquo;errors&rdquo; for the buffer that you&rsquo;re editing. Errors are context dependent. In a Ruby file it might be a syntax error. In a blog post, it might be a syntax error.
+There&rsquo;s a comparison table between Flycheck and Flymake here."/>
+
+    <meta property="og:title" content="Emacs syntax checking with Flycheck" />
+<meta property="og:description" content="Flycheck is a syntax checker for Emacs. Confusingly there&rsquo;s another syntax checker called Flymake that is built into Emacs. Flycheck seems to have vastly more functionality though.
+Essentially what Flycheck does is shows you &ldquo;errors&rdquo; for the buffer that you&rsquo;re editing. Errors are context dependent. In a Ruby file it might be a syntax error. In a blog post, it might be a syntax error.
+There&rsquo;s a comparison table between Flycheck and Flymake here." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://til.dmitrym.online/posts/flycheck-for-emacs/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-05-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-05-15T09:19:55-07:00" />
+
+
+
+    
+      <base href="https://til.dmitrym.online/posts/flycheck-for-emacs/">
+    
+    <title>
+  Emacs syntax checking with Flycheck · Dmitry M - Today I learned
+</title>
+
+    
+      <link rel="canonical" href="https://til.dmitrym.online/posts/flycheck-for-emacs/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://til.dmitrym.online/css/coder.min.8a0620e4f0e4dc1d46e4547e92d30120d90b9c9d55f9b1301a8646c76ffe6d3b.css" integrity="sha256-igYg5PDk3B1G5FR&#43;ktMBINkLnJ1V&#43;bEwGoZGx2/&#43;bTs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://til.dmitrym.online/css/custom.css" />
+    
+      <link rel="stylesheet" href="https://til.dmitrym.online/images/syntax.css" />
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://til.dmitrym.online/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://til.dmitrym.online/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.102.3" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://til.dmitrym.online/">
+      Dmitry M - Today I learned
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://til.dmitrym.online/posts/">TIL</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://dmitrym.online/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://til.dmitrym.online/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://til.dmitrym.online/pages/about/">About TIL</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Emacs syntax checking with Flycheck</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2024-05-15T00:00:00Z'>
+                May 15, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://til.dmitrym.online/tags/seedling/">seedling</a>
+      <span class="separator">•</span>
+    <a href="https://til.dmitrym.online/tags/emacs/">emacs</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p><a href="https://www.flycheck.org/">Flycheck</a> is a syntax checker for Emacs. Confusingly there&rsquo;s another syntax checker called Flymake that is built into Emacs. Flycheck seems to have vastly more functionality though.</p>
+<p>Essentially what Flycheck does is shows you &ldquo;errors&rdquo; for the buffer that you&rsquo;re editing. Errors are context dependent. In a Ruby file it might be a syntax error. In a blog post, it might be a syntax error.</p>
+<figure><img src="https://til.dmitrym.online/ox-hugo/2024-05-15_08-50-46_screenshot.png"/>
+</figure>
+
+<p>There&rsquo;s a comparison table between Flycheck and Flymake <a href="https://www.flycheck.org/en/latest/user/flycheck-versus-flymake.html#supported-languages">here</a>.</p>
+<h2 id="installation">Installation</h2>
+<p>There are whole bunch of modules you can install with flycheck, but you need the base package first:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">flycheck</span>
+</span></span><span class="line"><span class="cl"><span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl"><span class="nb">:config</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;after-init-hook</span> <span class="nf">#&#39;</span><span class="nv">global-flycheck-mode</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="language-tool">Language-tool</h3>
+<p>I initially looked into flycheck because I was interested in using <a href="https://languagetool.org">languagetool</a>; a spelling and grammar checker on steroids.</p>
+<p>flycheck-languagetool requires an external binary (see the <code>flycheck-languagetool-server-jar</code> below).</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-elisp" data-lang="elisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nb">use-package</span> <span class="nv">flycheck-languagetool</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:ensure</span> <span class="no">t</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:hook</span> <span class="p">(</span><span class="nv">text-mode</span> <span class="o">.</span> <span class="nv">flycheck-languagetool-setup</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">:init</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nb">setq</span> <span class="nv">flycheck-languagetool-server-jar</span> <span class="s">&#34;/opt/homebrew/Cellar/languagetool/6.4/libexec/languagetool-server.jar&#34;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="usage">Usage</h2>
+<ol>
+<li>Enable <code>global-flycheck-mode</code></li>
+<li>Install language appropriate packages.</li>
+<li>In the case of on languagetool, you can enable grammar and syntax checks in current buffer by executing <code>M-x flycheck-languagetool-setup</code>.</li>
+<li>Flycheck will do its thing, usually by underlining suspected errors. A buffer with a full listing of issues can be popped up with <code>M-x flycheck-list-errors</code>.</li>
+</ol>
+<h2 id="limitations">Limitations</h2>
+<p>Flycheck is useful for identifying errors. It cannot fix issues or offer recommendations on how to fix issues.</p>
+
+      </div>
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "dmitry-m-viridis-quo" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>General Nerdery.</p>
+    
+    
+      
+        © 2024
+      
+       Dmitry M 
+    
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
