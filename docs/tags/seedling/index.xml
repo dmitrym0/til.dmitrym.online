@@ -6,7 +6,18 @@
     <description>Recent content in seedling on Dmitry M - Today I learned</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://til.dmitrym.online/tags/seedling/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://til.dmitrym.online/tags/seedling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs syntax checking with Flycheck</title>
+      <link>https://til.dmitrym.online/posts/flycheck-for-emacs/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://til.dmitrym.online/posts/flycheck-for-emacs/</guid>
+      <description>Flycheck is a syntax checker for Emacs. Confusingly there&amp;rsquo;s another syntax checker called Flymake that is built into Emacs. Flycheck seems to have vastly more functionality though.
+Essentially what Flycheck does is shows you &amp;ldquo;errors&amp;rdquo; for the buffer that you&amp;rsquo;re editing. Errors are context dependent. In a Ruby file it might be a syntax error. In a blog post, it might be a syntax error.
+There&amp;rsquo;s a comparison table between Flycheck and Flymake here.</description>
+    </item>
+    
     <item>
       <title>How to remove stale github workflows</title>
       <link>https://til.dmitrym.online/posts/remove-stale-github-workflows/</link>
