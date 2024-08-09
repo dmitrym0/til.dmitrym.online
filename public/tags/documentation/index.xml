@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>documentation on Dmitry M - Today I learned</title>
-    <link>https://til.dmitrym.online/tags/documentation/</link>
-    <description>Recent content in documentation on Dmitry M - Today I learned</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Documentation on Dmitry M - Today I learned</title>
+    <link>http://localhost:1313/tags/documentation/</link>
+    <description>Recent content in Documentation on Dmitry M - Today I learned</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 Jan 2024 00:00:00 -0800</lastBuildDate><atom:link href="https://til.dmitrym.online/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Jan 2024 09:22:31 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>readme-toc - generate a table of contents in markdown documents</title>
-      <link>https://til.dmitrym.online/posts/readme-toc-generate-table-of-contents/</link>
+      <link>http://localhost:1313/posts/readme-toc-generate-table-of-contents/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 -0800</pubDate>
-      
-      <guid>https://til.dmitrym.online/posts/readme-toc-generate-table-of-contents/</guid>
-      <description>readme-toc is a utility that creates a table of contents in markdown documents.
-You create a placeholder for where you want the TOC to go and the utility creates the rest:
-Starting with this README.md:
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 # README.md &amp;lt;!-- toc --&amp;gt; &amp;lt;!-- toc stop --&amp;gt; # Installation instructions ```shell npx readme-toc ``` # Another Heading # Final heading then running:</description>
+      <guid>http://localhost:1313/posts/readme-toc-generate-table-of-contents/</guid>
+      <description>readme-toc is a utility that creates a table of contents in markdown documents.&#xA;You create a placeholder for where you want the TOC to go and the utility creates the rest:&#xA;Starting with this README.md:&#xA;1 2 3 4 5 6 7 8 9 10 11 12 13 14 # README.md &amp;lt;!-- toc --&amp;gt; &amp;lt;!-- toc stop --&amp;gt; # Installation instructions ```shell npx readme-toc ``` # Another Heading # Final heading then running:</description>
     </item>
-    
   </channel>
 </rss>

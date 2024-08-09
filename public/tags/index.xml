@@ -2,73 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Dmitry M - Today I learned</title>
-    <link>https://til.dmitrym.online/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Dmitry M - Today I learned</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://til.dmitrym.online/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Aug 2024 09:09:01 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>emacs</title>
-      <link>https://til.dmitrym.online/tags/emacs/</link>
+      <title>Learning</title>
+      <link>http://localhost:1313/tags/learning/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reading</title>
+      <link>http://localhost:1313/tags/reading/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reading/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emacs</title>
+      <link>http://localhost:1313/tags/emacs/</link>
       <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://til.dmitrym.online/tags/emacs/</guid>
+      <guid>http://localhost:1313/tags/emacs/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>seedling</title>
-      <link>https://til.dmitrym.online/tags/seedling/</link>
+      <title>Seedling</title>
+      <link>http://localhost:1313/tags/seedling/</link>
       <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://til.dmitrym.online/tags/seedling/</guid>
+      <guid>http://localhost:1313/tags/seedling/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>devops</title>
-      <link>https://til.dmitrym.online/tags/devops/</link>
+      <title>Devops</title>
+      <link>http://localhost:1313/tags/devops/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://til.dmitrym.online/tags/devops/</guid>
+      <guid>http://localhost:1313/tags/devops/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>github</title>
-      <link>https://til.dmitrym.online/tags/github/</link>
+      <title>Github</title>
+      <link>http://localhost:1313/tags/github/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://til.dmitrym.online/tags/github/</guid>
+      <guid>http://localhost:1313/tags/github/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>documentation</title>
-      <link>https://til.dmitrym.online/tags/documentation/</link>
+      <title>Documentation</title>
+      <link>http://localhost:1313/tags/documentation/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 -0800</pubDate>
-      
-      <guid>https://til.dmitrym.online/tags/documentation/</guid>
+      <guid>http://localhost:1313/tags/documentation/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>k8s</title>
-      <link>https://til.dmitrym.online/tags/k8s/</link>
+      <title>K8s</title>
+      <link>http://localhost:1313/tags/k8s/</link>
       <pubDate>Mon, 13 Nov 2023 00:00:00 -0800</pubDate>
-      
-      <guid>https://til.dmitrym.online/tags/k8s/</guid>
+      <guid>http://localhost:1313/tags/k8s/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>General</title>
-      <link>https://til.dmitrym.online/tags/general/</link>
+      <link>http://localhost:1313/tags/general/</link>
       <pubDate>Fri, 07 Dec 2001 00:00:00 +0000</pubDate>
-      
-      <guid>https://til.dmitrym.online/tags/general/</guid>
+      <guid>http://localhost:1313/tags/general/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

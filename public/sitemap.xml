@@ -2,57 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://til.dmitrym.online/pages/about/</loc>
+    <loc>http://localhost:1313/pages/about/</loc>
     <lastmod>2023-05-22T12:33:08-07:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-08-09T09:09:01+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/learning/</loc>
+    <lastmod>2024-08-09T09:09:01+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/bibliography-with-emacs-citar-and-zotero-/</loc>
+    <lastmod>2024-08-09T09:09:01+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-08-09T09:09:01+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/reading/</loc>
+    <lastmod>2024-08-09T09:09:01+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-08-09T09:09:01+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/emacs/</loc>
     <lastmod>2024-05-15T09:19:55-07:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/tags/emacs/</loc>
+    <loc>http://localhost:1313/posts/flycheck-for-emacs/</loc>
     <lastmod>2024-05-15T09:19:55-07:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/posts/flycheck-for-emacs/</loc>
+    <loc>http://localhost:1313/tags/seedling/</loc>
     <lastmod>2024-05-15T09:19:55-07:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/posts/</loc>
-    <lastmod>2024-05-15T09:19:55-07:00</lastmod>
-  </url><url>
-    <loc>https://til.dmitrym.online/tags/seedling/</loc>
-    <lastmod>2024-05-15T09:19:55-07:00</lastmod>
-  </url><url>
-    <loc>https://til.dmitrym.online/tags/</loc>
-    <lastmod>2024-05-15T09:19:55-07:00</lastmod>
-  </url><url>
-    <loc>https://til.dmitrym.online/tags/devops/</loc>
+    <loc>http://localhost:1313/tags/devops/</loc>
     <lastmod>2024-01-26T11:54:37-08:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/tags/github/</loc>
+    <loc>http://localhost:1313/tags/github/</loc>
     <lastmod>2024-01-26T11:54:37-08:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/posts/remove-stale-github-workflows/</loc>
+    <loc>http://localhost:1313/posts/remove-stale-github-workflows/</loc>
     <lastmod>2024-01-26T11:54:37-08:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/tags/documentation/</loc>
+    <loc>http://localhost:1313/tags/documentation/</loc>
     <lastmod>2024-01-16T09:22:31-08:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/posts/readme-toc-generate-table-of-contents/</loc>
+    <loc>http://localhost:1313/posts/readme-toc-generate-table-of-contents/</loc>
     <lastmod>2024-01-16T09:22:31-08:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/posts/local-ssl-proxy-and-mkcert/</loc>
+    <loc>http://localhost:1313/posts/local-ssl-proxy-and-mkcert/</loc>
     <lastmod>2024-01-02T17:02:50-08:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/tags/k8s/</loc>
+    <loc>http://localhost:1313/tags/k8s/</loc>
     <lastmod>2023-11-13T17:14:12-08:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/posts/stern/</loc>
+    <loc>http://localhost:1313/posts/stern/</loc>
     <lastmod>2023-11-13T17:14:12-08:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/tags/general/</loc>
+    <loc>http://localhost:1313/tags/general/</loc>
     <lastmod>2023-05-22T12:33:08-07:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/pages/</loc>
+    <loc>http://localhost:1313/pages/</loc>
     <lastmod>2023-05-22T12:33:08-07:00</lastmod>
   </url><url>
-    <loc>https://til.dmitrym.online/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

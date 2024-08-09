@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,36 +9,40 @@
     <meta name="description" content="Dmitry&#39;s personal website">
     <meta name="keywords" content="blog,developer,personal">
 
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="local-ssl-proxy and mkcert"/>
-<meta name="twitter:description" content="Ocassionally, it&rsquo;s helpful to run a local service with SSL. My particular scenario has an application that insists on redirecting everything to https even when running in development mode.
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="local-ssl-proxy and mkcert">
+  <meta name="twitter:description" content="Ocassionally, it’s helpful to run a local service with SSL. My particular scenario has an application that insists on redirecting everything to https even when running in development mode.
 Start with by installing local-ssl-proxy:
 1 npm install -g local-ssl-proxy run it like so:
 1 local-ssl-proxy --source 9001 --target 9000 if you want to avoid unsightly untrusted certificate errors install mkcert:
-1 2 3 brew install mkcert mkcert -install mkcert mydomainname.com Assuming that mydomainname."/>
+1 2 3 brew install mkcert mkcert -install mkcert mydomainname.com Assuming that mydomainname.">
 
-    <meta property="og:title" content="local-ssl-proxy and mkcert" />
-<meta property="og:description" content="Ocassionally, it&rsquo;s helpful to run a local service with SSL. My particular scenario has an application that insists on redirecting everything to https even when running in development mode.
+    <meta property="og:url" content="http://localhost:1313/posts/local-ssl-proxy-and-mkcert/">
+  <meta property="og:site_name" content="Dmitry M - Today I learned">
+  <meta property="og:title" content="local-ssl-proxy and mkcert">
+  <meta property="og:description" content="Ocassionally, it’s helpful to run a local service with SSL. My particular scenario has an application that insists on redirecting everything to https even when running in development mode.
 Start with by installing local-ssl-proxy:
 1 npm install -g local-ssl-proxy run it like so:
 1 local-ssl-proxy --source 9001 --target 9000 if you want to avoid unsightly untrusted certificate errors install mkcert:
-1 2 3 brew install mkcert mkcert -install mkcert mydomainname.com Assuming that mydomainname." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://til.dmitrym.online/posts/local-ssl-proxy-and-mkcert/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-01-02T00:00:00-08:00" />
-<meta property="article:modified_time" content="2024-01-02T17:02:50-08:00" />
-
+1 2 3 brew install mkcert mkcert -install mkcert mydomainname.com Assuming that mydomainname.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-01-02T00:00:00-08:00">
+    <meta property="article:modified_time" content="2024-01-02T17:02:50-08:00">
+    <meta property="article:tag" content="Seedling">
 
 
     
-      <base href="https://til.dmitrym.online/posts/local-ssl-proxy-and-mkcert/">
+      <base href="http://localhost:1313/posts/local-ssl-proxy-and-mkcert/">
     
     <title>
   local-ssl-proxy and mkcert · Dmitry M - Today I learned
 </title>
 
     
-      <link rel="canonical" href="https://til.dmitrym.online/posts/local-ssl-proxy-and-mkcert/">
+      <link rel="canonical" href="http://localhost:1313/posts/local-ssl-proxy-and-mkcert/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -48,7 +52,7 @@ Start with by installing local-ssl-proxy:
     
       
       
-      <link rel="stylesheet" href="https://til.dmitrym.online/css/coder.min.8a0620e4f0e4dc1d46e4547e92d30120d90b9c9d55f9b1301a8646c76ffe6d3b.css" integrity="sha256-igYg5PDk3B1G5FR&#43;ktMBINkLnJ1V&#43;bEwGoZGx2/&#43;bTs=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="http://localhost:1313/css/coder.css" media="screen">
     
 
     
@@ -56,19 +60,19 @@ Start with by installing local-ssl-proxy:
     
 
     
-      <link rel="stylesheet" href="https://til.dmitrym.online/css/custom.css" />
+      <link rel="stylesheet" href="http://localhost:1313/css/custom.css" />
     
-      <link rel="stylesheet" href="https://til.dmitrym.online/images/syntax.css" />
-    
-
+      <link rel="stylesheet" href="http://localhost:1313/images/syntax.css" />
     
 
     
 
-    <link rel="icon" type="image/png" href="https://til.dmitrym.online/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://til.dmitrym.online/img/favicon-16x16.png" sizes="16x16">
+    
 
-    <meta name="generator" content="Hugo 0.102.3" />
+    <link rel="icon" type="image/png" href="http://localhost:1313/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://localhost:1313/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.131.0">
   </head>
 
   
@@ -77,7 +81,7 @@ Start with by installing local-ssl-proxy:
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="https://til.dmitrym.online/">
+    <a class="navigation-title" href="http://localhost:1313/">
       Dmitry M - Today I learned
     </a>
     <input type="checkbox" id="menu-toggle" />
@@ -86,7 +90,7 @@ Start with by installing local-ssl-proxy:
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://til.dmitrym.online/posts/">TIL</a>
+            <a class="navigation-link" href="http://localhost:1313/posts/">TIL</a>
           </li>
         
           <li class="navigation-item">
@@ -94,11 +98,11 @@ Start with by installing local-ssl-proxy:
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://til.dmitrym.online/tags/">Tags</a>
+            <a class="navigation-link" href="http://localhost:1313/tags/">Tags</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="https://til.dmitrym.online/pages/about/">About TIL</a>
+            <a class="navigation-link" href="http://localhost:1313/pages/about/">About TIL</a>
           </li>
         
       
@@ -132,7 +136,7 @@ Start with by installing local-ssl-proxy:
           
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="https://til.dmitrym.online/tags/seedling/">seedling</a></div>
+    <a href="http://localhost:1313/tags/seedling/">seedling</a></div>
 
         </div>
       </header>
@@ -188,7 +192,7 @@ Start with by installing local-ssl-proxy:
 
 
         <div id="disqus_thread"></div>
-<script type="application/javascript">
+<script>
     window.disqus_config = function () {
     
     
@@ -255,6 +259,9 @@ Start with by installing local-ssl-proxy:
     </main>
 
     
+  
+
+
 
   </body>
 
