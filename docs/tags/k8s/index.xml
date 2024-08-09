@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>k8s on Dmitry M - Today I learned</title>
+    <title>K8s on Dmitry M - Today I learned</title>
     <link>https://til.dmitrym.online/tags/k8s/</link>
-    <description>Recent content in k8s on Dmitry M - Today I learned</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in K8s on Dmitry M - Today I learned</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Nov 2023 00:00:00 -0800</lastBuildDate><atom:link href="https://til.dmitrym.online/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 17:14:12 -0800</lastBuildDate>
+    <atom:link href="https://til.dmitrym.online/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stern</title>
       <link>https://til.dmitrym.online/posts/stern/</link>
       <pubDate>Mon, 13 Nov 2023 00:00:00 -0800</pubDate>
-      
       <guid>https://til.dmitrym.online/posts/stern/</guid>
-      <description>stern is a log tailer for k8s. Similar to tail -f but for multipe Kubernetes pods:
-1 2 3 4 stern --only-log-lines \ --max-log-requests 1000 \ --namespace k8s-namesapce \ &amp;#39;pod-wildcard*&amp;#39; </description>
+      <description>stern is a log tailer for k8s. Similar to tail -f but for multipe Kubernetes pods:&#xA;1 2 3 4 stern --only-log-lines \ --max-log-requests 1000 \ --namespace k8s-namesapce \ &amp;#39;pod-wildcard*&amp;#39; </description>
     </item>
-    
   </channel>
 </rss>

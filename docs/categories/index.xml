@@ -4,7 +4,8 @@
     <title>Categories on Dmitry M - Today I learned</title>
     <link>https://til.dmitrym.online/categories/</link>
     <description>Recent content in Categories on Dmitry M - Today I learned</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://til.dmitrym.online/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://til.dmitrym.online/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>github on Dmitry M - Today I learned</title>
+    <title>Github on Dmitry M - Today I learned</title>
     <link>https://til.dmitrym.online/tags/github/</link>
-    <description>Recent content in github on Dmitry M - Today I learned</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Github on Dmitry M - Today I learned</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://til.dmitrym.online/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jan 2024 11:54:37 -0800</lastBuildDate>
+    <atom:link href="https://til.dmitrym.online/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to remove stale github workflows</title>
       <link>https://til.dmitrym.online/posts/remove-stale-github-workflows/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://til.dmitrym.online/posts/remove-stale-github-workflows/</guid>
-      <description>There&amp;rsquo;s a long standing Github ticket for removing stale github workflows. Turns out there&amp;rsquo;s no way to remove a workflow.
-The work around here is to remove all workflow runs first.
-Install github command line tool: brew install gh In the repo&amp;rsquo;s working directory do the following: 1 gh run list --workflow=stale-workflow.yml --json databaseId | jq &amp;#39;.[].databaseId&amp;#39; | xargs -I{} gh run delete {} Replace stale-workflow.yml with the appropriate workflow file name.</description>
+      <description>There&amp;rsquo;s a long standing Github ticket for removing stale github workflows. Turns out there&amp;rsquo;s no way to remove a workflow.&#xA;The work around here is to remove all workflow runs first.&#xA;Install github command line tool: brew install gh In the repo&amp;rsquo;s working directory do the following: 1 gh run list --workflow=stale-workflow.yml --json databaseId | jq &amp;#39;.[].databaseId&amp;#39; | xargs -I{} gh run delete {} Replace stale-workflow.yml with the appropriate workflow file name.</description>
     </item>
-    
     <item>
       <title>readme-toc - generate a table of contents in markdown documents</title>
       <link>https://til.dmitrym.online/posts/readme-toc-generate-table-of-contents/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 -0800</pubDate>
-      
       <guid>https://til.dmitrym.online/posts/readme-toc-generate-table-of-contents/</guid>
-      <description>readme-toc is a utility that creates a table of contents in markdown documents.
-You create a placeholder for where you want the TOC to go and the utility creates the rest:
-Starting with this README.md:
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 # README.md &amp;lt;!-- toc --&amp;gt; &amp;lt;!-- toc stop --&amp;gt; # Installation instructions ```shell npx readme-toc ``` # Another Heading # Final heading then running:</description>
+      <description>readme-toc is a utility that creates a table of contents in markdown documents.&#xA;You create a placeholder for where you want the TOC to go and the utility creates the rest:&#xA;Starting with this README.md:&#xA;1 2 3 4 5 6 7 8 9 10 11 12 13 14 # README.md &amp;lt;!-- toc --&amp;gt; &amp;lt;!-- toc stop --&amp;gt; # Installation instructions ```shell npx readme-toc ``` # Another Heading # Final heading then running:</description>
     </item>
-    
   </channel>
 </rss>

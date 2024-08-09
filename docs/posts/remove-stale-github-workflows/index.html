@@ -9,21 +9,27 @@
     <meta name="description" content="Dmitry&#39;s personal website">
     <meta name="keywords" content="blog,developer,personal">
 
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="How to remove stale github workflows"/>
-<meta name="twitter:description" content="There&rsquo;s a long standing Github ticket for removing stale github workflows. Turns out there&rsquo;s no way to remove a workflow.
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How to remove stale github workflows">
+  <meta name="twitter:description" content="There’s a long standing Github ticket for removing stale github workflows. Turns out there’s no way to remove a workflow.
 The work around here is to remove all workflow runs first.
-Install github command line tool: brew install gh In the repo&rsquo;s working directory do the following: 1 gh run list --workflow=stale-workflow.yml --json databaseId | jq &#39;.[].databaseId&#39; | xargs -I{} gh run delete {} Replace stale-workflow.yml with the appropriate workflow file name."/>
+Install github command line tool: brew install gh In the repo’s working directory do the following: 1 gh run list --workflow=stale-workflow.yml --json databaseId | jq &#39;.[].databaseId&#39; | xargs -I{} gh run delete {} Replace stale-workflow.yml with the appropriate workflow file name.">
 
-    <meta property="og:title" content="How to remove stale github workflows" />
-<meta property="og:description" content="There&rsquo;s a long standing Github ticket for removing stale github workflows. Turns out there&rsquo;s no way to remove a workflow.
+    <meta property="og:url" content="https://til.dmitrym.online/posts/remove-stale-github-workflows/">
+  <meta property="og:site_name" content="Dmitry M - Today I learned">
+  <meta property="og:title" content="How to remove stale github workflows">
+  <meta property="og:description" content="There’s a long standing Github ticket for removing stale github workflows. Turns out there’s no way to remove a workflow.
 The work around here is to remove all workflow runs first.
-Install github command line tool: brew install gh In the repo&rsquo;s working directory do the following: 1 gh run list --workflow=stale-workflow.yml --json databaseId | jq &#39;.[].databaseId&#39; | xargs -I{} gh run delete {} Replace stale-workflow.yml with the appropriate workflow file name." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://til.dmitrym.online/posts/remove-stale-github-workflows/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-01-26T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-01-26T11:54:37-08:00" />
-
+Install github command line tool: brew install gh In the repo’s working directory do the following: 1 gh run list --workflow=stale-workflow.yml --json databaseId | jq &#39;.[].databaseId&#39; | xargs -I{} gh run delete {} Replace stale-workflow.yml with the appropriate workflow file name.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-01-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-26T11:54:37-08:00">
+    <meta property="article:tag" content="Seedling">
+    <meta property="article:tag" content="Github">
+    <meta property="article:tag" content="Devops">
 
 
     
@@ -64,7 +70,7 @@ Install github command line tool: brew install gh In the repo&rsquo;s working di
     <link rel="icon" type="image/png" href="https://til.dmitrym.online/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://til.dmitrym.online/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.102.3" />
+    <meta name="generator" content="Hugo 0.131.0">
   </head>
 
   
@@ -163,7 +169,7 @@ Install github command line tool: brew install gh In the repo&rsquo;s working di
 
 
         <div id="disqus_thread"></div>
-<script type="application/javascript">
+<script>
     window.disqus_config = function () {
     
     
@@ -230,6 +236,9 @@ Install github command line tool: brew install gh In the repo&rsquo;s working di
     </main>
 
     
+  
+
+
 
   </body>
 

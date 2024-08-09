@@ -4,71 +4,58 @@
     <title>Tags on Dmitry M - Today I learned</title>
     <link>https://til.dmitrym.online/tags/</link>
     <description>Recent content in Tags on Dmitry M - Today I learned</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://til.dmitrym.online/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 May 2024 09:19:55 -0700</lastBuildDate>
+    <atom:link href="https://til.dmitrym.online/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>emacs</title>
+      <title>Emacs</title>
       <link>https://til.dmitrym.online/tags/emacs/</link>
       <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://til.dmitrym.online/tags/emacs/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>seedling</title>
+      <title>Seedling</title>
       <link>https://til.dmitrym.online/tags/seedling/</link>
       <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://til.dmitrym.online/tags/seedling/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>devops</title>
+      <title>Devops</title>
       <link>https://til.dmitrym.online/tags/devops/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://til.dmitrym.online/tags/devops/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>github</title>
+      <title>Github</title>
       <link>https://til.dmitrym.online/tags/github/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://til.dmitrym.online/tags/github/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>documentation</title>
+      <title>Documentation</title>
       <link>https://til.dmitrym.online/tags/documentation/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 -0800</pubDate>
-      
       <guid>https://til.dmitrym.online/tags/documentation/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>k8s</title>
+      <title>K8s</title>
       <link>https://til.dmitrym.online/tags/k8s/</link>
       <pubDate>Mon, 13 Nov 2023 00:00:00 -0800</pubDate>
-      
       <guid>https://til.dmitrym.online/tags/k8s/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>General</title>
       <link>https://til.dmitrym.online/tags/general/</link>
       <pubDate>Fri, 07 Dec 2001 00:00:00 +0000</pubDate>
-      
       <guid>https://til.dmitrym.online/tags/general/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

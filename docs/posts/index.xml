@@ -4,65 +4,51 @@
     <title>Posts on Dmitry M - Today I learned</title>
     <link>https://til.dmitrym.online/posts/</link>
     <description>Recent content in Posts on Dmitry M - Today I learned</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://til.dmitrym.online/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Aug 2024 08:54:31 +0700</lastBuildDate>
+    <atom:link href="https://til.dmitrym.online/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>managing bibliography with emacs, citar and zotero</title>
+      <link>https://til.dmitrym.online/posts/managing_bibliography_with_emacs_and_citar/</link>
+      <pubDate>Fri, 09 Aug 2024 08:54:31 +0700</pubDate>
+      <guid>https://til.dmitrym.online/posts/managing_bibliography_with_emacs_and_citar/</guid>
+      <description>Meta Managing Bibliography with Emacs, Citar and Zotero Introduction When doing any sort of research, it becomes a real chore managing sources. Sources are web sites, books, articles or anything else that you need to reference in your research. It answers the question of &amp;ldquo;where did I read this?&amp;rdquo;.&#xA;Setup Zotero is a document and bibliography manager. It&amp;rsquo;s able to extract and snapshot webpages and generate bibliography like so:&#xA;1 2 3 4 5 6 7 8 9 10 11 12 @inreference{BigDig2024, title = {Big {{Dig}}}, booktitle = {Wikipedia}, date = {2024-07-28T04:33:34Z}, url = {https://en.</description>
+    </item>
     <item>
       <title>Emacs syntax checking with Flycheck</title>
       <link>https://til.dmitrym.online/posts/flycheck-for-emacs/</link>
       <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://til.dmitrym.online/posts/flycheck-for-emacs/</guid>
-      <description>Flycheck is a syntax checker for Emacs. Confusingly there&amp;rsquo;s another syntax checker called Flymake that is built into Emacs. Flycheck seems to have vastly more functionality though.
-Essentially what Flycheck does is shows you &amp;ldquo;errors&amp;rdquo; for the buffer that you&amp;rsquo;re editing. Errors are context dependent. In a Ruby file it might be a syntax error. In a blog post, it might be a syntax error.
-There&amp;rsquo;s a comparison table between Flycheck and Flymake here.</description>
+      <description>Flycheck is a syntax checker for Emacs. Confusingly there&amp;rsquo;s another syntax checker called Flymake that is built into Emacs. Flycheck seems to have vastly more functionality though.&#xA;Essentially what Flycheck does is shows you &amp;ldquo;errors&amp;rdquo; for the buffer that you&amp;rsquo;re editing. Errors are context dependent. In a Ruby file it might be a syntax error. In a blog post, it might be a syntax error.&#xA;There&amp;rsquo;s a comparison table between Flycheck and Flymake here.</description>
     </item>
-    
     <item>
       <title>How to remove stale github workflows</title>
       <link>https://til.dmitrym.online/posts/remove-stale-github-workflows/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://til.dmitrym.online/posts/remove-stale-github-workflows/</guid>
-      <description>There&amp;rsquo;s a long standing Github ticket for removing stale github workflows. Turns out there&amp;rsquo;s no way to remove a workflow.
-The work around here is to remove all workflow runs first.
-Install github command line tool: brew install gh In the repo&amp;rsquo;s working directory do the following: 1 gh run list --workflow=stale-workflow.yml --json databaseId | jq &amp;#39;.[].databaseId&amp;#39; | xargs -I{} gh run delete {} Replace stale-workflow.yml with the appropriate workflow file name.</description>
+      <description>There&amp;rsquo;s a long standing Github ticket for removing stale github workflows. Turns out there&amp;rsquo;s no way to remove a workflow.&#xA;The work around here is to remove all workflow runs first.&#xA;Install github command line tool: brew install gh In the repo&amp;rsquo;s working directory do the following: 1 gh run list --workflow=stale-workflow.yml --json databaseId | jq &amp;#39;.[].databaseId&amp;#39; | xargs -I{} gh run delete {} Replace stale-workflow.yml with the appropriate workflow file name.</description>
     </item>
-    
     <item>
       <title>readme-toc - generate a table of contents in markdown documents</title>
       <link>https://til.dmitrym.online/posts/readme-toc-generate-table-of-contents/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 -0800</pubDate>
-      
       <guid>https://til.dmitrym.online/posts/readme-toc-generate-table-of-contents/</guid>
-      <description>readme-toc is a utility that creates a table of contents in markdown documents.
-You create a placeholder for where you want the TOC to go and the utility creates the rest:
-Starting with this README.md:
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 # README.md &amp;lt;!-- toc --&amp;gt; &amp;lt;!-- toc stop --&amp;gt; # Installation instructions ```shell npx readme-toc ``` # Another Heading # Final heading then running:</description>
+      <description>readme-toc is a utility that creates a table of contents in markdown documents.&#xA;You create a placeholder for where you want the TOC to go and the utility creates the rest:&#xA;Starting with this README.md:&#xA;1 2 3 4 5 6 7 8 9 10 11 12 13 14 # README.md &amp;lt;!-- toc --&amp;gt; &amp;lt;!-- toc stop --&amp;gt; # Installation instructions ```shell npx readme-toc ``` # Another Heading # Final heading then running:</description>
     </item>
-    
     <item>
       <title>local-ssl-proxy and mkcert</title>
       <link>https://til.dmitrym.online/posts/local-ssl-proxy-and-mkcert/</link>
       <pubDate>Tue, 02 Jan 2024 00:00:00 -0800</pubDate>
-      
       <guid>https://til.dmitrym.online/posts/local-ssl-proxy-and-mkcert/</guid>
-      <description>Ocassionally, it&amp;rsquo;s helpful to run a local service with SSL. My particular scenario has an application that insists on redirecting everything to https even when running in development mode.
-Start with by installing local-ssl-proxy:
-1 npm install -g local-ssl-proxy run it like so:
-1 local-ssl-proxy --source 9001 --target 9000 if you want to avoid unsightly untrusted certificate errors install mkcert:
-1 2 3 brew install mkcert mkcert -install mkcert mydomainname.com Assuming that mydomainname.</description>
+      <description>Ocassionally, it&amp;rsquo;s helpful to run a local service with SSL. My particular scenario has an application that insists on redirecting everything to https even when running in development mode.&#xA;Start with by installing local-ssl-proxy:&#xA;1 npm install -g local-ssl-proxy run it like so:&#xA;1 local-ssl-proxy --source 9001 --target 9000 if you want to avoid unsightly untrusted certificate errors install mkcert:&#xA;1 2 3 brew install mkcert mkcert -install mkcert mydomainname.com Assuming that mydomainname.</description>
     </item>
-    
     <item>
       <title>Stern</title>
       <link>https://til.dmitrym.online/posts/stern/</link>
       <pubDate>Mon, 13 Nov 2023 00:00:00 -0800</pubDate>
-      
       <guid>https://til.dmitrym.online/posts/stern/</guid>
-      <description>stern is a log tailer for k8s. Similar to tail -f but for multipe Kubernetes pods:
-1 2 3 4 stern --only-log-lines \ --max-log-requests 1000 \ --namespace k8s-namesapce \ &amp;#39;pod-wildcard*&amp;#39; </description>
+      <description>stern is a log tailer for k8s. Similar to tail -f but for multipe Kubernetes pods:&#xA;1 2 3 4 stern --only-log-lines \ --max-log-requests 1000 \ --namespace k8s-namesapce \ &amp;#39;pod-wildcard*&amp;#39; </description>
     </item>
-    
   </channel>
 </rss>
