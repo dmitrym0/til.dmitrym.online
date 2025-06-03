@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "coder.css",
-	"sourceRoot": "/Users/dmitry/workspace/til.dmitrym.online",
+	"sourceRoot": "/Users/dmitrymarkushevich/workspace/til.dmitrym.online",
 	"sources": [
 		"themes/coder/assets/scss/coder.scss",
 		"themes/coder/assets/scss/_variables.scss",
