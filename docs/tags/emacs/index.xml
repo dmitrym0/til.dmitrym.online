@@ -13,7 +13,7 @@
       <link>https://til.dmitrym.online/posts/flycheck-for-emacs/</link>
       <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
       <guid>https://til.dmitrym.online/posts/flycheck-for-emacs/</guid>
-      <description>Flycheck is a syntax checker for Emacs. Confusingly there&amp;rsquo;s another syntax checker called Flymake that is built into Emacs. Flycheck seems to have vastly more functionality though.&#xA;Essentially what Flycheck does is shows you &amp;ldquo;errors&amp;rdquo; for the buffer that you&amp;rsquo;re editing. Errors are context dependent. In a Ruby file it might be a syntax error. In a blog post, it might be a syntax error.&#xA;There&amp;rsquo;s a comparison table between Flycheck and Flymake here.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.flycheck.org/&#34;&gt;Flycheck&lt;/a&gt; is a syntax checker for Emacs. Confusingly there&amp;rsquo;s another syntax checker called Flymake that is built into Emacs. Flycheck seems to have vastly more functionality though.&lt;/p&gt;&#xA;&lt;p&gt;Essentially what Flycheck does is shows you &amp;ldquo;errors&amp;rdquo; for the buffer that you&amp;rsquo;re editing. Errors are context dependent. In a Ruby file it might be a syntax error. In a blog post, it might be a syntax error.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://til.dmitrym.online/ox-hugo/2024-05-15_08-50-46_screenshot.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;There&amp;rsquo;s a comparison table between Flycheck and Flymake &lt;a href=&#34;https://www.flycheck.org/en/latest/user/flycheck-versus-flymake.html#supported-languages&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
